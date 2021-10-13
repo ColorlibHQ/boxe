@@ -176,14 +176,14 @@ class Epsilon_init_Dashboard {
 	 * Initiate the welcome screen
 	 */
 	public function init_dashboard() {
-		Epsilon_Dashboard::get_instance(
-			array(
-				'theme'    => array(
-					'download-id' => '212499'
-				),
-				'tracking' => $this->theme['theme-slug'] . '_tracking_enable',
-			)
-		);
+//		Epsilon_Dashboard::get_instance(
+//			array(
+//				'theme'    => array(
+//					'download-id' => '212499'
+//				),
+//				'tracking' => $this->theme['theme-slug'] . '_tracking_enable',
+//			)
+//		);
 
 		$dashboard = Epsilon_Dashboard_Setup::get_instance();
 		$dashboard->add_admin_notice();
