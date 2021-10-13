@@ -276,14 +276,13 @@ function boxe_page_titlebar() {
 /*================================================
 	Blog pull right class callback
 =================================================*/
-function boxe_pull_right( $id = '', $condation ){
+function boxe_pull_right( $id, $condation ){
     
     if( $id == $condation ){
         return ' '.'order-last';
     }else{
-        return;
+        return '';
     }
-    
 }
 
 
