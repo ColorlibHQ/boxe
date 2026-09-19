@@ -185,16 +185,16 @@ function boxe_link_pages(){
 
 function boxe_social_icon_overwrite_by_themefy_icon( $social_icon ){
 	switch ( $social_icon ) {
-		case ($social_icon == 'fa fa-facebook' || $social_icon == 'fa fa-facebook-f'):
+		case ($social_icon == 'fa-brands fa-facebook' || $social_icon == 'fa-brands fa-facebook-f'):
 			$social_icon = 'ti-facebook';
 			break;
-		case ($social_icon == 'fa fa-twitter'):
+		case ($social_icon == 'fa-brands fa-twitter'):
 			$social_icon = 'ti-twitter-alt';
 			break;
-		case ($social_icon == 'fa fa-skype'):
+		case ($social_icon == 'fa-brands fa-skype'):
 			$social_icon = 'ti-skype';
 			break;
-		case ($social_icon == 'fa fa-instagram'):
+		case ($social_icon == 'fa-brands fa-instagram'):
 			$social_icon = 'ti-instagram';
 			break;
 		

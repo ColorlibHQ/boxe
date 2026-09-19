@@ -56,7 +56,7 @@ class Boxe_newsletter_widget extends WP_Widget {
 
                     <div class="input-group-append">
                         <!-- <button class="btn button rounded-0 primary-bg text-white w-100 btn_4" type="submit"><i class="ti-angle-right"></i></button> -->
-                        <button class="btn button btn-default text-uppercase" type="submit"><i class="fa fa-paper-plane"></i></button>
+                        <button class="btn button btn-default text-uppercase" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
                     </div>
                     
                     <div style="position: absolute; left: -5000px;">
