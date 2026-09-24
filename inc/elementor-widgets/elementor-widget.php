@@ -294,15 +294,13 @@ if ( !class_exists( 'Boxe_El_Widgets' ) ) {
             // googleapis js
             wp_register_script( 'maps-googleapis', '//maps.googleapis.com/maps/api/js?key='.esc_attr( $apiKey ) );
 
-            // ajaxchimp js
-            wp_enqueue_script( 'jquery-ajaxchimp', BOXE_DIR_ELEMENTOR . 'assets/js/jquery.ajaxchimp.min.js', array('jquery'), '1.0', true );
 
 
             // boxe map custom js
-            wp_register_script( 'boxe-map-custom', BOXE_DIR_ELEMENTOR . 'assets/js/map-custom.js', array('jquery'), '1.0', true );
+            wp_register_script( 'boxe-map-custom', BOXE_DIR_ELEMENTOR . 'assets/js/map-custom.js', array(), '1.0-s2', true );
 
             // boxe companion main js
-            wp_enqueue_script( 'boxe', BOXE_DIR_ELEMENTOR . 'assets/js/boxe-companion-main.js', array( 'jquery', 'jquery-ui-datepicker' ), '1.0', true );
+            wp_enqueue_script( 'boxe', BOXE_DIR_ELEMENTOR . 'assets/js/boxe-companion-main.js', array( 'boxe-ui-js' ), '1.0-s2', true );
 
 
             wp_localize_script( 'boxe', 'ajax_object',

@@ -243,12 +243,12 @@ class Boxe_Testimonial extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            $(document).ready(function() {
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
                 // delivery slide js code
-                var deliveries = $('.deliveries_slider');
-                if (deliveries.length) {
-                deliveries.owlCarousel({
+                UI.owl('.deliveries_slider', {
                     items: 3,
                     loop: true,
                     dots: false,
@@ -259,27 +259,31 @@ class Boxe_Testimonial extends Widget_Base {
                     smartSpeed: 2000,
                     margin: 30,
                     navText: [
-                    '<i class="flaticon-left-arrow"></i>',
-                    '<i class="flaticon-right-arrow"></i>'
+                        '<i class="flaticon-left-arrow"></i>',
+                        '<i class="flaticon-right-arrow"></i>'
                     ],
                     responsive: {
-                    0: {
-                        nav: false,
-                        items: 1,
-                    },
-                    768: {
-                        nav: true,
-                        items: 2,
-                    },
-                    992: {
-                        nav: true,
-                        items: 3,
-                    }
+                        0: {
+                            nav: false,
+                            items: 1
+                        },
+                        768: {
+                            nav: true,
+                            items: 2
+                        },
+                        992: {
+                            nav: true,
+                            items: 3
+                        }
                     }
                 });
-                }
-            });
-        })(jQuery);
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

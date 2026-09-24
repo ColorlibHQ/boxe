@@ -10,7 +10,7 @@
 add_action( 'wp_enqueue_scripts', 'boxe_sl_enqueue_scripts' );
 function boxe_sl_enqueue_scripts() {
 
-	wp_enqueue_script( 'boxe-post-likes', BOXE_DIR_JS_URI . 'post-likes.js', array( 'jquery' ), '0.5', false );
+	wp_enqueue_script( 'boxe-post-likes', BOXE_DIR_JS_URI . 'post-likes.js', array( 'boxe-ui-js' ), '0.5-s2', true );
 
 	wp_localize_script( 'boxe-post-likes', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
