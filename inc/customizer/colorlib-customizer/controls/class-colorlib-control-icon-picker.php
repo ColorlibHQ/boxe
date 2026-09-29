@@ -48,7 +48,7 @@ if ( ! class_exists( 'Colorlib_Control_Icon_Picker' ) ) {
 				'instagram', 'linkedin', 'linkedin-square', 'youtube', 'youtube-play',
 				'pinterest', 'pinterest-p', 'dribbble', 'behance', 'tumblr', 'vimeo',
 				'skype', 'whatsapp', 'telegram', 'snapchat', 'reddit', 'github',
-				'google-plus', 'flickr', 'vk', 'rss', '500px', 'medium',
+				'flickr', 'vk', 'rss', '500px', 'medium',
 				// Contact.
 				'envelope', 'envelope-o', 'phone', 'mobile', 'fax', 'map-marker',
 				'location-arrow', 'globe', 'clock-o', 'calendar', 'paper-plane',
